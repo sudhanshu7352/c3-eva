@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 export const BookDetailsPage = () => {
-  const id =useParams()
+  const {id} =useParams()
   const [detail,setDetail] =useState([])
-
+ const navigate =useNavigate()
   useEffect(()=>{
     axios.get(`http://localhost:8080/books/${id}`).then((res)=>{
-      setDetail(...res.data)
+      setDetail([res.data])
       console.log(detail)
+    }).catch((e)=>{
+      navigate("/error")
     })
   },[])
   // Get book details based on ID whenever user lands on the page
@@ -20,7 +22,7 @@ export const BookDetailsPage = () => {
      {detail.map((e)=>(
          <div className="bookContainer" key={e.id}>
          <h2 className="title">{e.title}</h2>
-         <img className="image" src={e.iamgeUrl} alt="#" />
+         <img className="image" src={e.imageUrl} alt="#" />
          <div className="author">{e.author}</div>
          <div className="description">{e.description}</div>
          <div className="price">{e.price}</div>

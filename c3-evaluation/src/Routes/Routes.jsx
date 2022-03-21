@@ -12,7 +12,7 @@ export const AllRoutes = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/section/:section" element={<Section />}/>
-        <Route path="/bookdetailspage/:id" element={<BookDetailsPage />}   />
+        <Route path="/books/:id" element={<BookDetailsPage />}   />
         <Route path="*" element={<NotFound />} />
         {/* Create other routes here: Section, bookdetailspage and 404 */}
         {/*  */}
