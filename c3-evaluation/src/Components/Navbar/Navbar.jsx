@@ -5,24 +5,24 @@ export const Navbar = () => {
     <>
       <div className="navbar">
         <button className="home" >
-          <Link to="/" ></Link>
-          Home
+          <Link to="/" >{"home"}</Link>
+          {/* Home */}
         </button>
         <button className="mystery">
-        <Link to="/mystery" ></Link>
-        mystery
+        <Link to="/mystery" > mystery</Link>
+        
         </button>
         <button className="technology">
-        <Link to="/technology" ></Link>
-        technology
+        <Link to="/technology" >technology</Link>
+        
         </button>
         <button className="mythology" >
-        <Link to="/mythology" ></Link>
-        mythology
+        <Link to="/mythology" >mythology</Link>
+        
         </button>
         <button className="history">
-        <Link to="/history" ></Link>
-        history
+        <Link to="/history" > history</Link>
+       
         </button>
 
         {/* Populate 5 buttons with EXACT same classnames as of their routes name */}

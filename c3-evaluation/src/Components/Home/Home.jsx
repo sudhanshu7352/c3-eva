@@ -12,7 +12,7 @@ export const Home = () => {
   useEffect(()=>{
     axios.get("http://localhost:8080/books").then((res)=>{
       setBookinfo([...res.data])
-      console.log(bookinfo)
+      //console.log(bookinfo)
     })
   },[])
 

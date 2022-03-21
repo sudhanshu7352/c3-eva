@@ -9,7 +9,7 @@ export const BookDetailsPage = () => {
   useEffect(()=>{
     axios.get(`http://localhost:8080/books/${id}`).then((res)=>{
       setDetails([...res.data])
-      console.log(detail)
+     // console.log(detail)
     })
   },[])
   // Get book details based on ID whenever user lands on the page
@@ -17,18 +17,20 @@ export const BookDetailsPage = () => {
 
   return (
     <>
-      <div className="bookContainer">
-        <h2 className="title">{detail[id].title}</h2>
-        <img className="image" src={detail.iamgeUrl} alt="#" />
-        <div className="author">{detail.author}</div>
-        <div className="description">{detail.description}</div>
-        <div className="price">{detail.price}</div>
-        <div className="section">{detail.section}</div>
-        <div className="isbnNumber">{detail.isbnNumber}</div>
-        <ul className="reviews">
-          {/* Reviews will be an array, iterate over them and create a new <li> for every review */}
-        </ul>
-      </div>
+     {detail.map((e)=>(
+         <div className="bookContainer" key={e.id}>
+         <h2 className="title">{e.title}</h2>
+         <img className="image" src={e.iamgeUrl} alt="#" />
+         <div className="author">{e.author}</div>
+         <div className="description">{e.description}</div>
+         <div className="price">{e.price}</div>
+         <div className="section">{e.section}</div>
+         <div className="isbnNumber">{e.isbnNumber}</div>
+         <ul className="reviews">
+           {/* Reviews will be an array, iterate over them and create a new <li> for every review */}
+         </ul>
+       </div>
+     ))} 
     </>
   );
 };
