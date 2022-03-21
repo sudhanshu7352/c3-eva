@@ -1,0 +1,160 @@
+{
+    "Books":[
+        {
+            "title":"Book Name 1",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Mystery",
+            "isbnNumber": 1234567,
+            "id":1
+         },
+         {
+            "title":"Book Name 2",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Mystery",
+            "isbnNumber": 1234567,
+            "id":2
+         },
+         {
+            "title":"Book Name 3",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Mystery",
+            "isbnNumber": 1234567,
+            "id":3
+         },
+         {
+            "title":"Book Name 4",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":4
+         },
+         {
+            "title":"Book Name 5",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":5
+         },
+         {
+            "title":"Book Name 6",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":6
+         },
+         {
+            "title":"Book Name 7",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":7
+         },
+         {
+            "title":"Book Name 8",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":8
+         },
+         {
+            "title":"Book Name 9",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":9
+         },
+         {
+            "title":"Book Name 10",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":10
+         },
+         {
+            "title":"Book Name 11",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":11
+         },
+         {
+            "title":"Book Name 12",
+            "imageUrl":"image Url",
+            "description":"Book desc",
+            "reviews":[
+                "multiple reviews here"
+            ],
+            "author":"Book Author",
+            "price": 1234,
+            "section": "Technology",
+            "isbnNumber": 1234567,
+            "id":12
+         }
+    ]
+}
