@@ -4,12 +4,12 @@ import axios from "axios";
 
 export const BookDetailsPage = () => {
   const id =useParams()
-  const [detail,setDetails] =useState([])
+  const [detail,setDetail] =useState([])
 
   useEffect(()=>{
     axios.get(`http://localhost:8080/books/${id}`).then((res)=>{
-      setDetails([...res.data])
-     // console.log(detail)
+      setDetail(...res.data)
+      console.log(detail)
     })
   },[])
   // Get book details based on ID whenever user lands on the page

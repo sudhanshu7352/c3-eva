@@ -21,7 +21,7 @@ export const Home = () => {
     display :grid;
     grid-template-columns : repeat(3,400px);
     margin: 30px;
-
+     padding: 50px;
   `;
 
   return (
