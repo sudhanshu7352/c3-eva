@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { BookCard } from "../BookCard/BookCard";
@@ -6,6 +6,17 @@ import { SortAndFilterButtons } from "../SortAndFilterButtons/SortAndFilterButto
 import styled from "styled-components";
 
 export const Section = () => {
+  const {section} =useParams()
+  const [detail,setDetail] =useState([])
+//  const navigate =useNavigate()
+  useEffect(()=>{
+    axios.get(`http://localhost:8080/books/${section}`).then((res)=>{
+      setDetail([res.data])
+      console.log(detail)
+    }).catch((e)=>{
+      // navigate("/error")
+    })
+  },[])
   // you will receive section name from URL here.
   // Get books for only this section and show
   //   Everything else is same as Home page
@@ -18,7 +29,8 @@ export const Section = () => {
     <>
       <h2 style={{ textAlign: "center" }}>
         {
-          //   Show section name here
+          
+          section
         }
       </h2>
       <SortAndFilterButtons handleSort={"give sorting function to component"} />

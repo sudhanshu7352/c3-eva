@@ -23,9 +23,10 @@ export const BookDetailsPage = () => {
          <div className="bookContainer" key={e.id}>
          <h2 className="title">{e.title}</h2>
          <img className="image" src={e.imageUrl} alt="#" />
+         
          <div className="author">{e.author}</div>
          <div className="description">{e.description}</div>
-         <div className="price">{e.price}</div>
+         Price:<div className="price">{e.price}</div>
          <div className="section">{e.section}</div>
          <div className="isbnNumber">{e.isbnNumber}</div>
          <ul className="reviews">

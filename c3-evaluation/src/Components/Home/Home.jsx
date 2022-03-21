@@ -29,7 +29,10 @@ export const Home = () => {
       <h2 style={{ textAlign: "center" }}>Home</h2>
       <SortAndFilterButtons
         handleSort={
-          "give handleSort function to this component, that sorts books"
+         
+          bookinfo.sort((a,b)=>{
+            return a-b
+          })
         }
       />
 
