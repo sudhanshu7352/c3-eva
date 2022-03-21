@@ -19,8 +19,8 @@ export const Home = () => {
   const Main = styled.div`
     /* Apply some responsive styling to children */
     display :grid;
-    grid-template-columns : repeat(3,300px);
-    border: 1px solid gray;
+    grid-template-columns : repeat(3,400px);
+    margin: 30px;
 
   `;
 
