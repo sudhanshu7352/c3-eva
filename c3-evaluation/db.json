@@ -87,7 +87,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Technology",
+            "section": "Mythology",
             "isbnNumber": 1234567,
             "id":7
          },
@@ -100,7 +100,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Technology",
+            "section": "Mythology",
             "isbnNumber": 1234567,
             "id":8
          },
@@ -113,7 +113,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Technology",
+            "section": "Mythology",
             "isbnNumber": 1234567,
             "id":9
          },
@@ -126,7 +126,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Technology",
+            "section": "history",
             "isbnNumber": 1234567,
             "id":10
          },
@@ -139,7 +139,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Technology",
+            "section": "history",
             "isbnNumber": 1234567,
             "id":11
          },
@@ -152,7 +152,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Technology",
+            "section": "history",
             "isbnNumber": 1234567,
             "id":12
          }
