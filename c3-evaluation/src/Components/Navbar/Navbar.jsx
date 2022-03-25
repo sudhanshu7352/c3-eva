@@ -10,19 +10,19 @@ export const Navbar = () => {
           {/* Home */}
         </button>
         <button className="mystery" >
-        <Link to="/books/mystery" > {"mystery"}</Link>
+        <Link to="/section/mystery" > {"mystery"}</Link>
         
         </button>
         <button className="technology">
-        <Link to="/books/technology" >technology</Link>
+        <Link to="/section/technology" >technology</Link>
         
         </button>
         <button className="mythology" >
-        <Link to="/books/mythology" >mythology</Link>
+        <Link to="/section/mythology" >mythology</Link>
         
         </button>
         <button className="history">
-        <Link to="/books/history" > history</Link>
+        <Link to="/section/history" > history</Link>
        
         </button>
 

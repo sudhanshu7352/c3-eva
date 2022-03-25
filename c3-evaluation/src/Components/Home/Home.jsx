@@ -23,16 +23,14 @@ export const Home = () => {
     margin: 30px;
      padding: 50px;
   `;
-
+  
+  const handleSort = () => {}
   return (
     <div className="homeContainer">
       <h2 style={{ textAlign: "center" }}>Home</h2>
       <SortAndFilterButtons
         handleSort={
-         
-          bookinfo.sort((a,b)=>{
-            return a-b
-          })
+          handleSort
         }
       />
 

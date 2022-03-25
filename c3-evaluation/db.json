@@ -48,7 +48,7 @@
             ],
             "author":"Book Author",
             "price": 5246,
-            "section": "Technology",
+            "section": "technology",
             "isbnNumber": 1234567,
             "id":4
          },
@@ -61,7 +61,7 @@
             ],
             "author":"Book Author",
             "price": 2000,
-            "section": "Technology",
+            "section": "technology",
             "isbnNumber": 1234567,
             "id":5
          },
@@ -74,7 +74,7 @@
             ],
             "author":"secret corps",
             "price": 3566,
-            "section": "Technology",
+            "section": "technology",
             "isbnNumber": 1234567,
             "id":6
          },
@@ -87,7 +87,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Mythology",
+            "section": "mythology",
             "isbnNumber": 1234567,
             "id":7
          },
@@ -100,7 +100,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Mythology",
+            "section": "mythology",
             "isbnNumber": 1234567,
             "id":8
          },
@@ -113,7 +113,7 @@
             ],
             "author":"Book Author",
             "price": 1234,
-            "section": "Mythology",
+            "section": "mythology",
             "isbnNumber": 1234567,
             "id":9
          },
