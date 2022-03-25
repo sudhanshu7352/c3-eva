@@ -1,13 +1,13 @@
 export const SortAndFilterButtons = ({ handleSort }) => {
   return (
-    <div className="sortButtons">
-       <button onClick={() => {handleSort("title",1)}} className="sortByTitleAsc">
+    <div className="sortButtons" style={{justifyContent:"space-around",display:"flex",padding:"20px"}}>
+       <button onClick={() => handleSort("title",1)} className="sortByTitleAsc">
         sortByTitleAsc
       </button>
       <button onClick={() => {handleSort("title",-1)}} className="sortByTitleDesc">
         sortByTitleDesc
       </button>
-      <button onClick={() => {handleSort("price",1)}} className="sortByPriceAsc">sortByPriceAsc</button>
+      <button onClick={() => handleSort("price",1)} className="sortByPriceAsc">sortByPriceAsc</button>
       <button onClick={() => {handleSort("price",-1)}} className="sortByPriceDesc">sortByPriceDesc</button>
 
       {/*

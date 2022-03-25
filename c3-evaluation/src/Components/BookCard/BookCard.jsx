@@ -12,15 +12,20 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
   //     console.log(bookinfo)
   //   })
   // },[])
-
+   const Divtag =styled.div`
+    border: 2px solid gray;
+    padding: 20px;
+    margin :10px;
+    text-align: center;
+   `
    return (
-     <div className="bookCard">
+     <Divtag className="bookCard">
        <Link to={`/books/${id}`}>
            <img src={imageUrl} alt="" />
            <h2 className="title">{title}</h2>
            <p className="price">{price}</p>
        </Link>
-     </div>
+     </Divtag>
    )
 
 

@@ -9,6 +9,7 @@ export const Section = () => {
   const { section } = useParams();
   // console.log(section)
   const [detail, setDetail] = useState([]);
+  const [fil, setFil] = useState({});
   //  const navigate =useNavigate()
   useEffect(() => {
     axios.get(`http://localhost:8080/books`).then((res) => {
@@ -27,14 +28,24 @@ export const Section = () => {
     margin: 30px;
     padding: 50px;
   `;
-  const handleSort = () => {};
+  const handleSort = (paramter, value ) => { setFil({ paramter, value });};
   return (
     <>
       <h2 style={{ textAlign: "center" }}>{section}</h2>
       <SortAndFilterButtons handleSort={handleSort} />
 
       <Main className="sectionContainer">
-        {detail
+        {detail.sort((a, b) => {
+            if (fil.paramter == "title" && fil.value == 1) {
+              return a["title"].localeCompare(b["title"]);
+            } else if (fil.paramter == "title" && fil.value == -1) {
+              return b["title"].localeCompare(a["title"]);
+            } else if (fil.paramter == "price" && fil.value == 1) {
+              return a["price"] - b["price"];
+            } else if (fil.paramter == "price" && fil.value == -1) {
+              return b["price"] - a["price"];
+            }
+          })
           .filter((e) => {
             if (e.section == section) {
               return true;
