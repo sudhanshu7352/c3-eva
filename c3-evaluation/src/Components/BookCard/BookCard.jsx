@@ -19,13 +19,13 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
     text-align: center;
    `
    return (
-     <Divtag className="bookCard">
        <Link to={`/books/${id}`}>
+     <Divtag className="bookCard">
            <img src={imageUrl} alt="" />
            <h2 className="title">{title}</h2>
            <p className="price">{price}</p>
-       </Link>
      </Divtag>
+       </Link>
    )
 
 
